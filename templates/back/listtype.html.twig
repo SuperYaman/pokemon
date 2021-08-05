@@ -1,0 +1,25 @@
+{% extends 'base.html.twig.' %}
+{% block title %}
+
+{% endblock %}
+{% block body %}
+    <table class="table table-striped table-dark">
+        <thead>
+        <tr>
+            <th>Types</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for type in types %}
+        <tr>
+            <td>{{ type.type }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}
+
+
+

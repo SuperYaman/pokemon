@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PokemonController!{% endblock %}
+
+{% block body %}
+    {{ form_start(formPokemon) }}
+
+    {{ form_row(formPokemon.nom) }}
+
+    {{ form_row(formPokemon.number) }}
+
+    {{ form_row(formPokemon.taille) }}
+
+    {{ form_row(formPokemon.poids) }}
+
+    {{ form_row(formPokemon.sexe) }}
+
+    {{ form_row(formPokemon.types) }}
+
+    {{ form_row(formPokemon.image) }}
+
+    {{ form_end(formPokemon) }}
+
+
+{% endblock %}
